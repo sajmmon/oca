@@ -1,4 +1,4 @@
-package switc;
+package _switch;
 
 public class Main {
 
