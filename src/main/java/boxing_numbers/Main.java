@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Correct");
     }
 
-    static void(Object i){
+    static void doit(Object i){
         System.out.println("Missed");
     }
 }
