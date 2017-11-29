@@ -5,7 +5,11 @@ public class Main {
         int i = 1;
 
         if (++i == i){
-            System.out.println(i);
+            System.out.println("A: " + i);
+        }
+
+        if (i == ++i){
+            System.out.println("B: " + i);
         }
 
         /** Modulo */
