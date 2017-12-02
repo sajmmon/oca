@@ -41,6 +41,13 @@ public class Main {
         }
         System.out.println(localDateTime1.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
         // Prints: 2018-03-31T22:17:20.301
+
+        /** ofPattern syntax */
+        String input = "AAA 15 BBB 10PM.";
+        String pattern = "'AAA 'm' BBB 'ha.";
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(pattern);
+        LocalTime lt = LocalTime.parse(input, dtf);
+        System.out.println(lt);
     }
 
 }
