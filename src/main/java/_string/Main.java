@@ -10,6 +10,17 @@ public class Main {
         System.out.println(s1 == s2);
 
         s.equals('c');
+
+
+        /** OK */
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.insert(0, "a");
+
+        System.out.println(stringBuilder);
+
+        /** But */
+        StringBuilder stringBuilder1 = new StringBuilder();
+        stringBuilder1.insert(10, "a"); // StringIndexOutOfBoundsException
     }
 }
 
