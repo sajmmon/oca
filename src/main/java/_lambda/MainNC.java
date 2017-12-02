@@ -13,7 +13,7 @@ public class MainNC {
         };
 
 
-        /** Can not shadow variables */
+        /** Can not shadow variables from method, but can from class and instance */
         p = args -> true;
 
 
