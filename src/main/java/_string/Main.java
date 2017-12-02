@@ -7,9 +7,9 @@ public class Main {
         String s1 = s.substring(0,3);
         String s2 = s.substring(0,3);
 
-        System.out.println(s1 == s2);
+        System.out.println(s1 == s2); // true
 
-        s.equals('c');
+        s.equals('c'); //  false
 
 
         /** OK */
