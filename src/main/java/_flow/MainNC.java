@@ -13,5 +13,10 @@ public class MainNC {
         while(false)
             flag = !flag;
         System.out.println(flag);
+
+        /** no constructor in if without paranthesis */
+        if(true) {
+            Number n; // or Number n = new Double(3);
+        }
     }
 }

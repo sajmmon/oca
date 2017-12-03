@@ -2,6 +2,21 @@ package _arrays;
 
 public class MainNC {
     public static void main(String[] args) {
+
+
+    }
+
+    static void init(){
+        int[] i;
+        i = {1,2,3}; // ILLEGAL
+        i = new int[3];
+
+        int[][][] i3 = new int[1][][];
+        int[][][] i4 = new int[1][][3]; // ILLEGAL
+
+    }
+
+    static void declarations(){
         int[] a1 = new int[0];
         int[] a2 = {};
         int[] a3 = new int[]{};
@@ -12,6 +27,5 @@ public class MainNC {
         int[][] a8 = new int[4][];
         int[][] a9 = new int[][4];
         int[][] a10 = new int[4][0];
-
     }
 }
