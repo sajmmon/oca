@@ -28,6 +28,9 @@ public class Main {
         n.intValue();
         n.longValue();
         n.shortValue();
+
+        /** Math is in lang not util */
+        java.lang.Math.random();
     }
 
     static void doit(Number i){
