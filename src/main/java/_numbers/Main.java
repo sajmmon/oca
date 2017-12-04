@@ -19,6 +19,15 @@ public class Main {
             int i = 10;
             doit(i);
         }
+
+        /** Number interface no booleanValue or charValue*/
+        Number n = 10;
+        n.byteValue();
+        n.doubleValue();
+        n.floatValue();
+        n.intValue();
+        n.longValue();
+        n.shortValue();
     }
 
     static void doit(Number i){
