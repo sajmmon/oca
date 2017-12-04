@@ -21,6 +21,14 @@ public class Main {
         /** But */
         StringBuilder stringBuilder1 = new StringBuilder();
         stringBuilder1.insert(10, "a"); // StringIndexOutOfBoundsException
+
+        /** replace */
+        int start = 0;
+        int end = 1;
+        stringBuilder.replace(start, end, "Buu");
+
+        /** No matches method, which is in string */
+        "".matches("");
     }
 }
 
