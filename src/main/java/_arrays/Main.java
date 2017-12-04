@@ -27,10 +27,19 @@ public class Main {
 
         /** Iterate */
         int[] ints = null;
-        checkEmpty(ints); // NullPointerException
+        if(false)
+            checkEmpty(ints); // NullPointerException
 
         /** But */
         checkEmpty(); // Fine
+
+        /** Null */
+        int[] ints1 = {1,4,3,4};
+        Integer[] integers = {1,3,4,3,null};
+
+        // Arrays.binarySearch(ints1, null); not compile
+        if(false)
+            Arrays.binarySearch(integers, null); // NullPointerException
     }
 
     static void checkEmpty(int... args){
