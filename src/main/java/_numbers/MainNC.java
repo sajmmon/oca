@@ -2,6 +2,14 @@ package _numbers;
 
 public class MainNC {
     public static void main(String[] args) {
+
+        /** Casting */
+        short s1 = (Short)300; // ILLEGAL
+        Short s2 = (Short)300; // ILLEGAL
+        short s3 = (short)300; // LEGAL
+        short s4 = 300; // LEGAL
+
+
         Integer iRef = 0b111_000; //
         byte b = 0B1111_1111;
         double d = 0B111_111D;

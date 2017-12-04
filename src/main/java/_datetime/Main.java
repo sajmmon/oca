@@ -13,7 +13,7 @@ public class Main {
     static LocalDate localDate2 = LocalDate.MAX;
     static LocalDateTime localDateTime2 = LocalDateTime.of(localDate2, localTime2);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         /** Compiles */
         System.out.println(localDate1); // 2018-09-12
 
@@ -48,6 +48,13 @@ public class Main {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern(pattern);
         LocalTime lt = LocalTime.parse(input, dtf);
         System.out.println(lt);
+
+        /** Instant */
+        Instant i = Instant.now();
+        long l1 = i.toEpochMilli();
+        Thread.sleep(3000L);
+        long l2 = i.toEpochMilli();
+        System.out.println(l1 + "\t" + l2);
     }
 
 }
