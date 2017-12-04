@@ -24,5 +24,13 @@ public class Main {
 
         System.out.println(p);
 
+        /** Predicate */
+        Predicate predicate = null;
+        predicate.and(predicate);
+        predicate.negate();
+        predicate.or(predicate);
+        predicate.test(new Object());
+        Predicate.isEqual(new Object());
+
     }
 }
