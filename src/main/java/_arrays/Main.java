@@ -40,6 +40,10 @@ public class Main {
         // Arrays.binarySearch(ints1, null); not compile
         if(false)
             Arrays.binarySearch(integers, null); // NullPointerException
+
+        /** prints null */
+        Integer[] ints2 = new Integer[]{null};
+        System.out.println(ints2[0]); // prints null
     }
 
     static void checkEmpty(int... args){
