@@ -1,6 +1,6 @@
 package _structure;
 
-public class MainNC {
+class MainNC {
 
     /** Allowed */
     private MainNC(){}
@@ -17,3 +17,5 @@ public class MainNC {
 
 
 }
+
+

@@ -20,7 +20,7 @@ public class Main {
 
         /** But */
         StringBuilder stringBuilder1 = new StringBuilder();
-        stringBuilder1.insert(10, "a"); // StringIndexOutOfBoundsException
+        if(false) stringBuilder1.insert(10, "a"); // StringIndexOutOfBoundsException
 
         /** replace */
         int start = 0;
@@ -29,6 +29,25 @@ public class Main {
 
         /** No matches method, which is in string */
         "".matches("");
+
+        /** insert in StringBuilder */
+        StringBuilder sb0 = new StringBuilder("abc");
+        sb0.insert(3, "X");
+        if(false) sb0.insert(5, "Y"); // StringIndexOutOfBoundsException
+        System.out.println(sb0);
+
+
+        /** Constructor in StringBuilder */
+        int intCapacity = 1;
+        StringBuilder sb1 = new StringBuilder(intCapacity);
+        if(false) {StringBuilder sb2 = new StringBuilder(null);} // NullPointerException
+        StringBuilder sb3 = new StringBuilder("a");
+
+        /** CharSequece */
+        // StringBuilder sb4 = new StringBuilder(new char[]{'a','b'}); not compile
+        CharSequence cs = null;
+        StringBuilder sb4 = new StringBuilder(cs);
+
 
 
     }
