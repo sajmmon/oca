@@ -49,5 +49,12 @@ public class Main {
         System.out.println(1 + + + + 2 - - 3); // 6
         System.out.println(1 + + + + 2 - - - 3); // 0
 
+        boolean b = true;
+        boolean b1 = (b = false);
+
+        int i1 = 1;
+        int i2 = (i1 = 2);
+
+        System.out.println(b1 +" \t" + i2); // false 2
     }
 }
