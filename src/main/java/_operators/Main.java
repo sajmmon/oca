@@ -19,5 +19,7 @@ public class Main {
         int w = - 7 % -3;
         int u = (- 7) % -3;
         System.out.println(x + "\t" + y + "\t" + z + "\t" + w + "\t" + u);
+
+
     }
 }

@@ -15,5 +15,13 @@ public class Main {
             case y + 6:
                 System.out.println("Ahsa");
         }
+
+        /** assignment is true */
+        boolean h = false;
+        if(h = true){
+            System.out.println("in");
+        }
+
+
     }
 }
