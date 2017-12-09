@@ -14,6 +14,7 @@ public class Main {
             case x + 5:
             case y + 6:
                 System.out.println("Ahsa");
+
         }
 
         /** assignment is true */
@@ -21,7 +22,6 @@ public class Main {
         if(h = true){
             System.out.println("in");
         }
-
 
     }
 }

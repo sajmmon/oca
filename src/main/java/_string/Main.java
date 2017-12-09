@@ -46,9 +46,18 @@ public class Main {
         /** CharSequece */
         // StringBuilder sb4 = new StringBuilder(new char[]{'a','b'}); not compile
         CharSequence cs = null;
-        StringBuilder sb4 = new StringBuilder(cs);
+        if(false) {
+            StringBuilder sb4 = new StringBuilder(cs); // NullPointerException
+        }
 
 
+        /** Print null */
+        Integer i = null;
+        System.out.println(i); // null
+        System.out.println("A" + null); // Anull
+
+        /** Just null does not compile */
+        // System.out.println(null); // Ambigious method call
 
     }
 }
