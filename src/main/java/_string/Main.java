@@ -60,6 +60,16 @@ public class Main {
         /** Just null does not compile */
         // System.out.println(null); // Ambigious method call
 
+        /** Compare strings */
+        String st1 = "Java";
+        String st2 = "Rocks";
+        String st3 = "JavaRocks";
+        System.out.println(st3 == st1 + st2); // false
+        String st4 = "JavaRocks";
+        System.out.println(st4 == st3); // true
+        String st5 = st1 + st2;
+        System.out.println(st5 == st4); // false
+
     }
 }
 
