@@ -43,6 +43,18 @@ public class Main {
         /** prints null */
         Integer[] ints2 = new Integer[]{null};
         System.out.println(ints2[0]); // prints null
+
+
+        /** Assignments */
+
+        char[] charArray = null;
+        int[] intArray = null;
+
+        Number[] numberArray = null;
+        Double[] doubleArray = null;
+
+        // intArray = charArray; incompatible types
+        numberArray = doubleArray; // OK
     }
 
     static void checkEmpty(int... args){
