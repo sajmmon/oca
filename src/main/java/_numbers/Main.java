@@ -31,6 +31,18 @@ public class Main {
 
         /** Math is in lang not util */
         java.lang.Math.random();
+
+        /** Hexa */
+
+        int h = 015;
+        if (h == 13L) {
+            System.out.println("Hex: " + Integer.toHexString(h));
+            System.out.println("Equal");
+        }
+        else
+            System.out.println("Not equal");
+
+        // Prints Equal
     }
 
     static void doit(Number i){
