@@ -23,5 +23,33 @@ public class Main {
             System.out.println("in");
         }
 
+        /** Are equivalent */
+        {
+            int x1 = 0;
+            while (true){
+                x1 ++;
+                if (x1 > 5) break;
+                System.out.println(x1);
+            }
+        }
+
+        {
+            int x1 = 0;
+            for(;x1<5;){
+                x1 ++;
+                if (x1 > 5) break;
+                System.out.println(x1);}
+
+        }
+
+        {
+            int x1 = 0;
+            for(int y1 = 0; y1 < 5; y1++){
+                x1 ++;
+                if (x1 > 5) break;
+                System.out.println(x1);}
+
+        }
+
     }
 }

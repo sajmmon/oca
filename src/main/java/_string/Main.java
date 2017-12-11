@@ -69,6 +69,8 @@ public class Main {
         System.out.println(st4 == st3); // true
         String st5 = st1 + st2;
         System.out.println(st5 == st4); // false
+        String st6 = st5.substring(0);
+        System.out.println(st6 == st5); // true
 
     }
 }
