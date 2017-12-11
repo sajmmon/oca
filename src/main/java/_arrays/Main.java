@@ -55,7 +55,17 @@ public class Main {
 
         // intArray = charArray; incompatible types
         numberArray = doubleArray; // OK
+
+        /** How to use varargs */
+
+        whatAccept(new int[]{1,2,3}); // OK
+        // whatAccept({1,2,3}); // ILLEGAL
+        int[] int1Array = {1,2,3};
+        whatAccept(int1Array); // OK
+
     }
+
+    static void whatAccept(int... args){}
 
     static void checkEmpty(int... args){
         for(int i : args);
