@@ -48,6 +48,13 @@ public class Main {
         // Long l = new Integer(4); // ILLEGAL
         Long l = new Integer(4).longValue(); // OK
         long l1 = new Integer(4); // OK
+
+        /** Cast integer to short */
+        // Short s1 = (Short)300; // can not cast int to Short
+        // short s2 = (Short)300;
+        short s3 = (short)300; // OK
+        short s4 = 300; // OK
+
     }
 
     static void doit(Number i){
