@@ -43,6 +43,11 @@ public class Main {
             System.out.println("Not equal");
 
         // Prints Equal
+
+        /** Primitive vs Numbers */
+        // Long l = new Integer(4); // ILLEGAL
+        Long l = new Integer(4).longValue(); // OK
+        long l1 = new Integer(4); // OK
     }
 
     static void doit(Number i){
