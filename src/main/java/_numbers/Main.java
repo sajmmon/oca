@@ -124,10 +124,19 @@ public class Main {
 
         double d5 = 0.056_666_54_2;
         int i7 = 012;
-        char c7 = '\u0027';
+        //char c7 = '\u0027';
         int i8 = 0x12;
         int i9 = 0b001;
         int i10 = 0B1;
+
+        /** Confirm */
+        Double do1 = new Double(2.0);
+        Double do2 = new Double(2.0);
+
+        if(do1 == do2)
+            System.out.println("As expected");
+        else
+            System.out.println("Ups!");
 
 
 

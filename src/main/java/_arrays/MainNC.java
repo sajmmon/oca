@@ -5,6 +5,7 @@ public class MainNC {
 
         // Integer[] integers = new int[3]; ILLEGAL
         // int[] ints = new Integer[4]; ILLEGAL
+        Number[] numbers = new Integer[3]; // OK
 
     }
 
