@@ -27,10 +27,10 @@ public class Main {
 
 
         /** Precenence
-         * () [] .
-         * ++ -- (post)
+         * () [] .          LR
+         * ++ -- (post)     RL
          * ++ -- (pre) !
-         * new () cast
+         * new (cast)
          * * / %
          * + - + string concatenation
          * << >>
@@ -38,9 +38,14 @@ public class Main {
          * != ==
          * &&
          * ||
-         * ?:
-         * = += -= *= /=
+         * ?:               RL
+         * = += -= *= /=    RL
          */
+
+        /** Do not understand why 2 and not 3 */
+        int a = 0;
+        a = ++a == a++ ? a++ : a++;
+        System.out.println(a); //2 !!!
 
         int x1 = 1;
         System.out.println( x1++ + ++x1 * --x1 ); // 7

@@ -49,11 +49,121 @@ public class Main {
         Long l = new Integer(4).longValue(); // OK
         long l1 = new Integer(4); // OK
 
+
         /** Cast integer to short */
         // Short s1 = (Short)300; // can not cast int to Short
         // short s2 = (Short)300;
         short s3 = (short)300; // OK
         short s4 = 300; // OK
+
+        /** Initialization */
+        byte b1 = 127;
+        // byte b1 = 128; ILLEGAL cast needed
+        byte b2 = (byte)128;
+        // byte b3 = (Byte)128; ILLEGAL
+
+        short s1 = 32767;
+        // short s2 = 32768; ILLEGAL
+        short s5 = (short)32768;
+        /** Also */
+        short s6;
+        s6 = 32767;
+
+        char c1 = 32768; // LEGAL because only positive
+        char c2 = 0;
+        // char c3 = -1; ILLEGAL
+        char c4 = 32767 * 2;
+        // char c5 = 32768 * 2; ILLEGAL
+
+        int i1 = 32768;
+        int i2 = (Integer)32768; // Can cast as literal without dot is int
+
+        long l2 = 100; // Convert int to long
+        long l3 = 100L; // With L or l is long
+        long l4 = 100l;
+
+        float f1 = 10F;
+        float f2 = 10f;
+
+        float f3 =10; // Can convert int to float
+        //float f4 = 10.0; // ILLEGAL as literal is double and possible loose of precision
+
+        double d1 = 10;
+        double d2 = 10d;
+        double d3 = 10D;
+
+        /** Conversion */
+        b1 = (byte)d1; // Can cast everything
+
+        d1 = f1;
+        d1 = i1;
+        d1 = s1;
+        d1 = c1;
+        d1 = b1;
+
+        // f1 = d1; ILLEGAL
+        f1 = i1;
+        f1 = s1;
+        f1 = c1;
+        f1 = b1;
+
+        // i1 = d1; ILLEGAL
+        // i1 = f1; ILLEGAL
+        i1 = s1;
+        i1 = c1;
+        i1 = b1;
+
+        // s1 = d1; ILLEGAL
+        // s1 = f1; ILLEGAL
+        // s1 = i1; ILLEGAL
+        // s1 = c1; ILLEGAL
+        s1 = b1;
+
+        // c1 = d1;
+        // c1 = f1;
+        // c1 = i1;
+        // c1 = s1; ILLEGAL
+        /** char can not be byte as it is only positive */
+        // c1 = b1;
+
+        /** Underscores and other notations */
+
+        double d5 = 0.056_666_54_2;
+        int i7 = 012;
+        //char c7 = '\u0027';
+        int i8 = 0x12;
+        int i9 = 0b001;
+        int i10 = 0B1;
+
+        /** Confirm */
+        Double do1 = new Double(2.0);
+        Double do2 = new Double(2.0);
+        Double do3 = 2.0;
+        Double do4 = 2.0;
+
+        if(do1 != do2)
+            System.out.println("do1 != do2");
+
+        if (do3 != do4)
+            System.out.println("do3 != do4");
+
+        if (do1 != do3)
+            System.out.println("do1 != do3");
+
+        Long a = new Long(1000);
+        Long b = new Long(1000);
+        long c = 1000;
+        long d = 1000;
+
+        if (a != b)
+            System.out.println("a != b");
+
+        if (a == c)
+            System.out.println("a == c");
+
+        if (c == d)
+            System.out.println("c == d");
+
 
     }
 
