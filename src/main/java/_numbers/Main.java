@@ -123,6 +123,11 @@ public class Main {
         /** Underscores and other notations */
 
         double d5 = 0.056_666_54_2;
+        int i7 = 012;
+        char c7 = '\u0027';
+        int i8 = 0x12;
+        int i9 = 0b001;
+        int i10 = 0B1;
 
 
 
