@@ -120,6 +120,10 @@ public class Main {
         /** char can not be byte as it is only positive */
         // c1 = b1;
 
+        /** Underscores and other notations */
+
+        double d5 = 0.056_666_54_2;
+
 
 
     }
