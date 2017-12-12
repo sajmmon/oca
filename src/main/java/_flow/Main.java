@@ -4,6 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /** Label must directly preceed loop, error in tests where i++; is used */
+
+        for(;;){
+            int i = 3;
+            L:
+            for(;;){
+                break L;
+            }
+            break;
+        }
+
         final int x = 1;
         final int y = 1;
 
