@@ -59,6 +59,9 @@ public class Main {
         short s1 = 32767;
         // short s2 = 32768; ILLEGAL
         short s3 = (short)32768;
+        /** Also */
+        short s4;
+        s4 = 32767;
 
         char c1 = 32768; // LEGAL because only positive
         char c2 = 0;
