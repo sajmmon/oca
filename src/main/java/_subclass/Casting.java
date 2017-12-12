@@ -12,6 +12,12 @@ public class Casting {
     }
 }
 
-class A {}
-class B {}
+class A {
+    int x;
+}
+class B extends A{
+    void doit(){
+        super.x++;
+    }
+}
 interface C{}

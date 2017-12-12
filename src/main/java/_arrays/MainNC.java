@@ -3,12 +3,14 @@ package _arrays;
 public class MainNC {
     public static void main(String[] args) {
 
+        // Integer[] integers = new int[3]; ILLEGAL
+        // int[] ints = new Integer[4]; ILLEGAL
 
     }
 
     static void init(){
         int[] i;
-        i = {1,2,3}; // ILLEGAL
+        // i = {1,2,3}; // ILLEGAL
         i = new int[3];
 
         int[][][] i3 = new int[1][][];
