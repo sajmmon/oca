@@ -132,12 +132,14 @@ public class Main {
         /** Confirm */
         Double do1 = new Double(2.0);
         Double do2 = new Double(2.0);
+        Double do3 = 2.0;
+        Double do4 = 2.0;
 
-        if(do1 == do2)
-            System.out.println("As expected");
-        else
-            System.out.println("Ups!");
+        if(do1 != do2)
+            System.out.println("As expected 1");
 
+        if (do3 != do4)
+            System.out.println("As expected 2");
 
 
     }
