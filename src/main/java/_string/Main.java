@@ -1,5 +1,7 @@
 package _string;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -71,6 +73,28 @@ public class Main {
         System.out.println(st5 == st4); // false
         String st6 = st5.substring(0);
         System.out.println(st6 == st5); // true
+
+        /** Split beharior */
+        {
+            String string = ":";
+            String[] strings = string.split(":");
+            System.out.println(Arrays.toString(strings));
+            // []
+        }
+
+        {
+            String string = "a:";
+            String[] strings = string.split(":");
+            System.out.println(Arrays.toString(strings));
+            // [a]
+        }
+
+        {
+            String string = ":a";
+            String[] strings = string.split(":");
+            System.out.println(Arrays.toString(strings));
+            // [,a]
+        }
 
     }
 }
