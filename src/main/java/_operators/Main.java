@@ -61,5 +61,11 @@ public class Main {
         int i2 = (i1 = 2);
 
         System.out.println(b1 +" \t" + i2); // false 2
+
+        /** Ups */
+        int a1 = 1;
+        int b2 = a1++;
+        System.out.println(b2);
+
     }
 }
