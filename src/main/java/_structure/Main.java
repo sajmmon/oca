@@ -1,9 +1,13 @@
 package _structure;
 
+
+/** Can have duplicate or unused import statements, but can not have unreachable */
+import java.lang.Math;
 import java.lang.Math;
 import static java.lang.Math.*;
 
-/** public or default */ class Main {
+/** At most one public class */
+/** public or not */ class Main {
 
     protected Main(){}
     Main(int a){}
