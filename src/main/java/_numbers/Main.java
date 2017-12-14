@@ -1,5 +1,8 @@
 package _numbers;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import sun.misc.FloatingDecimal;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -165,6 +168,7 @@ public class Main {
             System.out.println("c == d");
 
 
+<<<<<<< HEAD
         /** Exact return type */
         double d10 = Double.parseDouble("1.0");
         Double d11 = Double.valueOf(1.0);
@@ -220,6 +224,49 @@ public class Main {
         new Boolean(true);
         new Boolean("true");
         new Character('c'); // ONLY constructor
+=======
+        /** Number */
+        // Double double0 = new Double(); ILLEGAL
+        if(false) {
+            Double double1 = new Double(null); // NullPointerException at runtime
+        }
+        String string = "  +12   ";
+        Double double2 = new Double(string);
+        // Internally parseDouble is used
+        Double double3 = Double.parseDouble(string); // returns double
+        Double double4 = Double.valueOf(2.0);
+        Double double5 = Double.valueOf(string); // returns Double
+
+        System.out.println(new Double("  +12   "));
+        System.out.println(new Double("NaN"));
+        System.out.println(new Double("Infinity"));
+        System.out.println(new Double("-Infinity"));
+        if(false)System.out.println(new Double("-InfinitY"));
+        System.out.println(new Double("-Infinity   ")); // trim works
+
+        /** Boolean */
+        // Boolean boolean1 = new Boolean(); ILLEGAL
+        System.out.println(new Boolean("true"));
+        System.out.println(new Boolean(true));
+        System.out.println(Boolean.parseBoolean("trUe")); // gives true
+        System.out.println(Boolean.parseBoolean("true ")); // gives false trim does not work
+        /** This one looks for System property, does not parse anything */
+        System.out.println(Boolean.getBoolean("trUE")); // Incorrect String gives false !!!
+        /** But there is not Double.getDouble() because it would make no sense */
+
+        System.out.println(new Boolean("true") == new Boolean("true")); // false
+        System.out.println(new Boolean("true") == Boolean.TRUE); // false
+        System.out.println(Boolean.TRUE == Boolean.TRUE); // true
+        System.out.println(new Boolean("true") == true); // true
+
+        /** Character */
+        // Character character = new Character(null); ILLEGAL
+        Character character1 = new Character('Y');
+        Character character2 = new Character((char)20);
+        // Character character3 = new Character(20); ILLEGAL
+        // Character character4 = new Character("Y"); ILLEGAL
+
+>>>>>>> 747e84e4c39dd3202e72494e2d4888604bac3e41
 
     }
 
