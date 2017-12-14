@@ -168,7 +168,6 @@ public class Main {
             System.out.println("c == d");
 
 
-<<<<<<< HEAD
         /** Exact return type */
         double d10 = Double.parseDouble("1.0");
         Double d11 = Double.valueOf(1.0);
@@ -224,7 +223,7 @@ public class Main {
         new Boolean(true);
         new Boolean("true");
         new Character('c'); // ONLY constructor
-=======
+
         /** Number */
         // Double double0 = new Double(); ILLEGAL
         if(false) {
@@ -265,8 +264,6 @@ public class Main {
         Character character2 = new Character((char)20);
         // Character character3 = new Character(20); ILLEGAL
         // Character character4 = new Character("Y"); ILLEGAL
-
->>>>>>> 747e84e4c39dd3202e72494e2d4888604bac3e41
 
     }
 
