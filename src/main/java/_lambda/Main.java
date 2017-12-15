@@ -25,11 +25,12 @@ public class Main {
         System.out.println(p);
 
         /** Predicate */
-        Predicate<Object> predicate = (x) -> 1==1;
-        Predicate p1 = predicate.and(predicate);
+        Predicate<ArrayIndexOutOfBoundsException> predicate = (x) -> 1==1;
+        Predicate<IndexOutOfBoundsException> predicatateSuper = (x) -> 2==2;
+        Predicate p1 = predicate.and(predicatateSuper);
         Predicate p2 = predicate.negate();
         Predicate p3 = predicate.or(predicate);
-        boolean b = predicate.test(new Object());
+        boolean b = predicate.test(null);
         Predicate p4 = Predicate.isEqual("sss");
         boolean b1 = p4.test("sss");
 
