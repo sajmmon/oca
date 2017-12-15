@@ -25,12 +25,13 @@ public class Main {
         System.out.println(p);
 
         /** Predicate */
-        Predicate predicate = null;
-        predicate.and(predicate);
-        predicate.negate();
-        predicate.or(predicate);
-        predicate.test(new Object());
-        Predicate.isEqual(new Object());
+        Predicate<Object> predicate = (x) -> 1==1;
+        Predicate p1 = predicate.and(predicate);
+        Predicate p2 = predicate.negate();
+        Predicate p3 = predicate.or(predicate);
+        boolean b = predicate.test(new Object());
+        Predicate p4 = Predicate.isEqual("sss");
+        boolean b1 = p4.test("sss");
 
     }
 }
