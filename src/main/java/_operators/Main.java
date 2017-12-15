@@ -42,6 +42,7 @@ public class Main {
          * = += -= *= /=    RL
          */
 
+
         /** Do not understand why 2 and not 3 */
         int a = 0;
         a = ++a == a++ ? a++ : a++;
@@ -66,6 +67,30 @@ public class Main {
         int a1 = 1;
         int b2 = a1++;
         System.out.println(b2);
+
+    }
+
+    {
+        /** Test memory
+
+         () . []
+         ++ -- (post)
+         ++ -- (pre)                AND !
+         new (cast)
+         * / %
+                                    NOTHING HERE
+         + - +(String)
+         >> << instanceof           ADD THIS
+         == !=                      GOES HERE
+         &&
+         ||
+         < >
+         == !=                      WRONG POSITION
+         ?:                         RL
+         = += -= /= *= %=           RL
+
+
+         */
 
     }
 }
