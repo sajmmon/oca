@@ -24,13 +24,30 @@ public class Main {
 
         System.out.println(p);
 
+        class A {
+            int a;
+            public A(int a){
+                this.a = a;
+            }
+        }
+
+        class B extends A{
+            int b;
+            public B(int a){
+                super(a);
+                this.b = a;
+            }
+        }
         /** Predicate */
-        Predicate<ArrayIndexOutOfBoundsException> predicate = (x) -> 1==1;
-        Predicate<IndexOutOfBoundsException> predicatateSuper = (x) -> 2==2;
-        Predicate p1 = predicate.and(predicatateSuper);
-        Predicate p2 = predicate.negate();
-        Predicate p3 = predicate.or(predicate);
-        boolean b = predicate.test(null);
+        Predicate<A> predicateA = (a) -> a.a > 0;
+        Predicate<B> predicateB = (b) -> b.b < 5;
+
+        Predicate<B> pAnd = predicateB.and(predicateA);
+
+        boolean result = pAnd.test(new B(3));
+
+
+
         Predicate p4 = Predicate.isEqual("sss");
         boolean b1 = p4.test("sss");
 
