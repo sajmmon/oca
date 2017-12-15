@@ -168,6 +168,62 @@ public class Main {
             System.out.println("c == d");
 
 
+        /** Exact return type */
+        double d10 = Double.parseDouble("1.0");
+        Double d11 = Double.valueOf(1.0);
+        Double d12 = Double.valueOf("1.0");
+
+        float f10 = Float.parseFloat("1.0");
+        Float f11 = Float.valueOf(1.0f);
+        Float f12 = Float.valueOf("1.0");
+
+        long l10 = Long.parseLong("10");
+        long l11 = Long.parseLong("10", 2);
+        Long l12 = Long.valueOf(10);
+        Long l13 = Long.valueOf("10");
+        Long l14 = Long.valueOf("10",2);
+
+        int i11 = Integer.parseInt("10");
+        int i12 = Integer.parseInt("10",2);
+        Integer i13 = Integer.valueOf(10);
+        Integer i14 = Integer.valueOf("10");
+        Integer i15 = Integer.valueOf("10", 2);
+
+        short s13 = Short.parseShort("10");
+        short s14 = Short.parseShort("10",2);
+        Short s10 = Short.valueOf((short)10);
+        Short s11 = Short.valueOf("10");
+        Short s12 = Short.valueOf("10",2);
+
+        byte b13 = Byte.parseByte("10");
+        byte b14 = Byte.parseByte("10", 2);
+        Byte b10 = Byte.valueOf((byte)10);
+        Byte b11 = Byte.valueOf("10");
+        Byte b12 = Byte.valueOf("10",2);
+
+        boolean b20 = Boolean.parseBoolean("true");
+        Boolean b21 = Boolean.valueOf(true);
+        Boolean b22 = Boolean.valueOf("true");
+
+        // char c10 = Character.parse... NOT EXISTS
+        char c11 = Character.valueOf('C');
+
+        /** Constructors */
+
+        new Double("10");
+        new Float("10");
+        new Float(10.0); // argument is double not like in valueOf
+        new Long(10);
+        new Long("10"); // No constructor with radix
+        new Integer("10");
+        new Short((short)10); // but here argument is short
+        new Short("10");
+        new Byte((byte)10);
+        new Byte("10");
+        new Boolean(true);
+        new Boolean("true");
+        new Character('c'); // ONLY constructor
+
         /** Number */
         // Double double0 = new Double(); ILLEGAL
         if(false) {
@@ -208,7 +264,6 @@ public class Main {
         Character character2 = new Character((char)20);
         // Character character3 = new Character(20); ILLEGAL
         // Character character4 = new Character("Y"); ILLEGAL
-
 
     }
 
