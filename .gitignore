@@ -3,6 +3,7 @@
 # Compiled class file
 *.class
 oca.iml  
+.idea/compiler.xml
 # Log file
 *.log
 
