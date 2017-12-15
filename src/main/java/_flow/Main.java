@@ -16,6 +16,14 @@ public class Main {
             break;
         }
 
+
+        /** switch must by of types:
+         * byte, short, char, int or their wrappers
+         * or enum
+         * or String,
+         *
+         * values must be constant, literal or final */
+
         final int x = 1;
         final int y = 1;
 
