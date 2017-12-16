@@ -81,6 +81,10 @@ public class Main {
 //            System.out.println("");
 //        }
 
+        /** Does not compile, only arrays and Iterable */
+//        for(char c : new StringBuilder()){
+//
+//        }
 
     }
 
