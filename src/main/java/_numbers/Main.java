@@ -5,7 +5,9 @@ import sun.misc.FloatingDecimal;
 
 public class Main {
 
-    public static void main(String[] args) {
+    final public int aaa = 5;
+
+    final public static void main(String[] args) {
 
         /** Print float */
         float f = 0.0f;
