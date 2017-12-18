@@ -63,6 +63,10 @@ public class Main {
         int[] int1Array = {1,2,3};
         whatAccept(int1Array); // OK
 
+        /** Print */
+        String[] arrayS = new String[]{"A", "B"};
+        System.out.println(arrayS);
+        // [Ljava.lang.String;@610455d6
     }
 
     static void whatAccept(int... args){}

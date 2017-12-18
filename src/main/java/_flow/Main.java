@@ -71,6 +71,20 @@ public class Main {
 
         }
 
+        /** Compiles because executed once, so reachable */
+        do {
+            System.out.println("");
+        } while (false);
+
+        /** Does not compile as unreacheable code */
+//        while(false){
+//            System.out.println("");
+//        }
+
+        /** Does not compile, only arrays and Iterable */
+//        for(char c : new StringBuilder()){
+//
+//        }
 
     }
 
@@ -84,4 +98,6 @@ public class Main {
             if (c > 3) break JACK; else c++;
         }
     }
+
+
 }
