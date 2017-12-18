@@ -265,6 +265,8 @@ public class Main {
         // Character character3 = new Character(20); ILLEGAL
         // Character character4 = new Character("Y"); ILLEGAL
 
+        /** Possible */
+        short shorty = new Byte((byte)4);
     }
 
     static void doit(Number i){
