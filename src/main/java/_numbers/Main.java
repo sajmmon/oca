@@ -6,9 +6,16 @@ import sun.misc.FloatingDecimal;
 public class Main {
 
     final public int aaa = 5;
+    char char1;
+    int int1 = char1;
 
+    {
+        System.out.println(char1); // prints emtpy char
+        System.out.println(int1); // prints
+    }
     final public static void main(String[] args) {
 
+        new Main();
         /** Octal, hexal, binary */
 
         int octal = 07; // digits 0-7
@@ -16,6 +23,7 @@ public class Main {
         int hexalX = 0X1A;
         int binaryb = 0b01;
         int binaryB = 0B11;
+
 
         /** Print float */
         float f = 0.0f;
