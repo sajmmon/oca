@@ -9,6 +9,14 @@ public class Main {
 
     final public static void main(String[] args) {
 
+        /** Octal, hexal, binary */
+
+        int octal = 07; // digits 0-7
+        int hexalx = 0x1F;
+        int hexalX = 0X1A;
+        int binaryb = 0b01;
+        int binaryB = 0B11;
+
         /** Print float */
         float f = 0.0f;
         System.out.println(f); // 0.0

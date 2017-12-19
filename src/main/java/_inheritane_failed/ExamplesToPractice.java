@@ -10,4 +10,12 @@ public class ExamplesToPractice {
     public static void main(String[] args) {
 
     }
+
+    interface I {
+        public static final int i = 1;
+        public static int doit(){return 1;}
+        public default int dothat(){return 1;}
+        public abstract int dothis();
+
+    }
 }
