@@ -24,7 +24,7 @@ public class Main {
          *
          * values must be constant, literal or final */
 
-        final int x = 1;
+        final int x = 1; // MUST BE in one line, real final not eventually final
         final int y = 1;
 
         switch (y) {
