@@ -6,6 +6,19 @@ public class Main {
 
     public static void main(String[] args){
 
+
+/** NullPointerException */
+        /*{
+            Boolean b = null;
+            if (b) {
+                int i = 1;
+            }
+            ;
+        }
+        */
+
+/** Hiding exception from catch with the one from finally */
+        /*
         try{
             doit();
         }catch (Exception e){
@@ -15,12 +28,36 @@ public class Main {
             System.out.println("------------");
             System.out.println(e);
         }
+        */
+/** return statement in catch */
+        if(false) {
+            String s = null;
+            System.out.println(dothat(s));
+        }
+        // In finally
+        // In catch
 
+        if(true) {
+            String s = "Str";
+            System.out.println(dothat(s));
+        }
+    }
+
+    static String dothat(String s1){
+        try{
+            return s1.toString();
+        }catch(NullPointerException e){
+            return "In catch";
+        }
+            finally {
+            System.out.println("In finally");
+        }
     }
 
     static void doit() throws IOException{
         try{
-            throw new Exception();
+            System.out.println("Hi hi");
+            /** Can catch Exception that is not thrown */
         } catch (Exception e){
             throw new Exception("From catch");
         } finally {
