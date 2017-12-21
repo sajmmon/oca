@@ -6,6 +6,16 @@ public class Main {
 
         /** Label must directly preceed loop, error in tests where i++; is used */
 
+        int c = 0;
+
+        A:
+        if (c >= 0){
+            System.out.println("In a");
+            if (c == 0) {
+                break A;
+            }
+        }
+
         A:
         for(;;){
             int i = 3;
@@ -91,12 +101,7 @@ public class Main {
 
     /** Labels */
     void crazyLoop(){
-        int c = 0;
-        JACK: while (c < 8){
-            JILL:
-            System.out.println(c);
-            if (c > 3) break JACK; else c++;
-        }
+
     }
 
 
