@@ -150,5 +150,9 @@ public class SB_S_AL {
         stringBuilder.trimToSize();
 
 
+        StringBuilder sb1 = new StringBuilder("a");
+        StringBuilder sb2 = new StringBuilder("a");
+        System.out.println(sb1.equals(sb2)); // false
+
     }
 }
