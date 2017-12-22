@@ -62,12 +62,6 @@ public class SB_S_AL {
         /** Common */
         c = string.charAt(10);
         c = stringBuilder.charAt(10);
-        i = string.codePointAt(10);
-        i = stringBuilder.codePointAt(10);
-        i = string.codePointBefore(10);
-        i = stringBuilder.codePointBefore(10);
-        i = string.codePointCount(1,10);
-        i = stringBuilder.codePointCount(1,10);
 
         string.getChars(1,1,chars,1);
         stringBuilder.getChars(1,1,chars,1);
