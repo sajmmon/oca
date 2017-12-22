@@ -31,6 +31,7 @@ import static java.lang.Math.*;
         methodInt(null);
 
         method(1, null);
+        method(null, 1);
         // methodInt(1, null); ILLEGAL
 
     }
