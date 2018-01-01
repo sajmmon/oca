@@ -64,4 +64,27 @@ public class Main {
             throw new IOException("From finally");
         }
     }
+
+    void justCheck(){
+        /** OK */
+        try{
+            System.out.println();
+        }catch (RuntimeException e){
+
+        }
+
+        /** OK */
+        try{
+            System.out.println();
+        }catch (Exception e){
+
+        }
+
+        /** NOT OK */
+//        try{
+//            System.out.println();
+//        }catch (IOException e){
+//
+//        }
+    }
 }
