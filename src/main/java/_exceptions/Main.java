@@ -76,7 +76,7 @@ public class Main {
         /** OK */
         try{
             System.out.println();
-        }catch (Exception e){
+        }catch (Exception e){ // also Throwable, Error
 
         }
 
