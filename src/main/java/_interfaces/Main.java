@@ -22,3 +22,7 @@ class A implements I{
         doit();
     }
 }
+
+interface I2 {
+    void doit() throws Exception;
+}
