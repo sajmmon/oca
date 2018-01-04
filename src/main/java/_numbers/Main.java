@@ -3,6 +3,8 @@ package _numbers;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import sun.misc.FloatingDecimal;
 
+import java.time.format.DateTimeFormatter;
+
 public class Main {
 
     final public int aaa = 5;
@@ -161,6 +163,8 @@ public class Main {
         Double do2 = new Double(2.0);
         Double do3 = 2.0;
         Double do4 = 2.0;
+        Double do5 = 1.0/0.0;
+        do5.isInfinite();
 
         if(do1 != do2)
             System.out.println("do1 != do2");
