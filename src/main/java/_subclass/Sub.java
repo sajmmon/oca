@@ -14,6 +14,11 @@ class Sub extends Sup {
 }
 
 class SubSub extends Sup {
+    interface I {
+
+    }
+    I i = new I(){};
+
     SubSub() {
         s += "subsub ";
     }
