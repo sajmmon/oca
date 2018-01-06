@@ -26,3 +26,8 @@ class A implements I{
 interface I2 {
     void doit() throws Exception;
 }
+
+abstract interface I3 {
+    default int doit(){return 1;}
+
+}
