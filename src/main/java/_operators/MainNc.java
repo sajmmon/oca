@@ -5,6 +5,6 @@ public class MainNc {
 
         /** Operator ! cannot be applied to int */
         int b=1;
-         if(!b>10) System.out.printf("");
+         // if(!b>10) System.out.printf("");
     }
 }

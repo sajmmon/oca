@@ -19,7 +19,7 @@ class MainNC {
     void method() {
         int name = 1;
         if (5 > 10) {
-            int name = 2;
+            //int name = 2;
         }
     }
 

@@ -10,7 +10,7 @@ public class MainNC {
         System.out.println(flag);
 
         /** But */
-        while(false)
+        //while(false);
             flag = !flag;
         System.out.println(flag);
 
