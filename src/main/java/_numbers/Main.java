@@ -190,6 +190,7 @@ public class Main {
             System.out.println("c == d");
 
 
+        float flo1 = 10L;
         /** Exact return type */
         double d10 = Double.parseDouble("1.0");
         Double d11 = Double.valueOf(1.0);
