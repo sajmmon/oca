@@ -88,3 +88,11 @@ public class Main {
 //        }
     }
 }
+
+
+// NOT COMPILE
+//class A {
+//    static {
+//        throw new NullPointerException();
+//    }
+//}
