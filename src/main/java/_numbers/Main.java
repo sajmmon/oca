@@ -295,6 +295,7 @@ public class Main {
         Integer wi = 0;
         Double wd = 0.0;
         if(!wi.equals(wd)) System.out.println("Nope");
+
     }
 
     static void doit(Number i){

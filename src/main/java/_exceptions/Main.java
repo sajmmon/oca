@@ -2,9 +2,32 @@ package _exceptions;
 
 import java.io.IOException;
 
+class MyEx extends Exception{
+    public MyEx(String m){
+        super(m);
+    }
+}
+
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws MyEx{
+
+        /** Messages */
+        try {
+            throw new MyEx("Abc");
+        } catch (Exception e){
+            System.out.println(e); // _exceptions.MyEx: Abc
+            System.out.println();
+            System.out.println(e.getStackTrace()); // [Ljava.lang.StackTraceElement;@610455d6
+            System.out.println();
+            System.out.println(e.getMessage()); // Abc
+            System.out.println();
+            e.printStackTrace();
+            // _exceptions.MyEx: Abc
+            // at _exceptions.Main.main(Main.java:17)
+        }
+
+
 
 
 /** NullPointerException */
