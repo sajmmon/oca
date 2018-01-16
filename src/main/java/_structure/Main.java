@@ -11,6 +11,14 @@ import static java.lang.Math.*;
 /** At most one public class */
 /** public or not */ class Main {
 
+    {i = 3;
+    j = 4;}
+    // i = 5;
+    int i = 2;
+
+    static {j = 2;}
+    static int j = 1;
+
     protected Main(){}
     Main(int a){}
     private Main(byte a){}
