@@ -6,6 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /** String and char */
+        String as1 = "a";
+        char[] ac = {'a'};
+        String as2 = null;
+        as2 = as2 + ac[0];
+        System.out.println((as1 == as2) + " AND " + as1.equals(as2)); // false AND false
+        System.out.println(as1 == as2 + " AND " + as1.equals(as2)); // false
+// as1 = "a"
+// as2 = "nulla"
+
+        // as2 = ac[0]; // ILLEGAL
+
         String s = "abc";
         String s1 = s.substring(0,3);
         String s2 = s.substring(0,3);
