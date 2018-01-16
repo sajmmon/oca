@@ -296,6 +296,13 @@ public class Main {
         Double wd = 0.0;
         if(!wi.equals(wd)) System.out.println("Nope");
 
+        /** String to value */
+        String astring = "123";
+        long l5 = Long.parseLong(astring);
+        Long l6 = Long.valueOf(astring);
+        Long l7 = new Long(astring);
+        long l8 = l7.longValue();
+
     }
 
     static void doit(Number i){
