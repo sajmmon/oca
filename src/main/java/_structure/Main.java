@@ -5,6 +5,7 @@ package _structure;
 import java.lang.Math;
 import java.lang.Math;
 import java.util.Arrays;
+import static _structure.ToImport.*;
 
 import static java.lang.Math.*;
 
@@ -12,7 +13,13 @@ import static java.lang.Math.*;
 /** public or not */ class Main {
 
     {i = 3;
-    j = 4;}
+    j = 4;
+
+    // Both are imported
+    doit();
+    doit(1);
+
+    }
     // i = 5;
     int i = 2;
 
