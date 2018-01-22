@@ -17,6 +17,10 @@ public class Main {
     }
     final public static void main(String[] args) {
 
+        int s = 1;
+        s+= ++s; // Does not change s on left side
+        System.out.println(s); // 3
+
         new Main();
         /** Octal, hexal, binary */
 

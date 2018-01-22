@@ -31,3 +31,8 @@ abstract interface I3 {
     default int doit(){return 1;}
 
 }
+
+interface I4 {
+    public static final int i=5;
+
+}
