@@ -5,7 +5,7 @@ package _structure;
 import java.lang.Math;
 import java.lang.Math;
 import java.util.Arrays;
-import static _structure.ToImport.*;
+import static _structure.ToImport.doit;
 
 import static java.lang.Math.*;
 
