@@ -5,6 +5,12 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+        /** System.arrayCopy */
+        char[] cA = { 'e', 's', 'p', 'r', 'e', 's', 's', 'o', '8', '9', '0'};
+        System.arraycopy(cA, 2, cA, 6, 5);
+        System.out.println(cA[8]); // e - effectivelly overwrite last 5 elements
+
+
         /** Sort and toString */
         Number[] n = new Integer[]{1,7,4};
         System.out.println(Arrays.toString(n));
